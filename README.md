@@ -1,8 +1,8 @@
 # Desen_Rap_Aplic_Python
  Desenvolvimento Rápido de Aplicações em Python
  
- Exercícios_Aula01 \n
- Ex01: Tuplas \n
+ Exercícios_Aula01 
+ Ex01: Tuplas
  Ex02: Indexador em listas
  Ex03: Cálculo de distância entre dois pontos
  Ex04: Número par ou ímpar
