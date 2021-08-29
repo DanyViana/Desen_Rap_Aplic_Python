@@ -31,7 +31,7 @@ elementos = len(lista_elementos)
 print("Quantidade de elementos na lista: ", elementos)
 
 meio=int(elementos/2) #função para verificar qual a posição do meio na lista (é posição, não é o número)
-print("Posição do elemento central: ", meio)
+print("Posição do elemento central: ", meio+1) #como começa com índice zero, considerei o + 1 porque iniciamos a contagem em 1, 2, 3...
 
 # Medida: SE a quantidade de elementos é par, a mediana é a soma do valor antecessor ao meio e o valor do meio, divido por 2. SE a quantidade de elementos é ímpar, a mediana é o valor central. 
 if (len(lista_ordenada)%2)==0: #verificar se o resto da divisão por 2 é zero, se for é par. 
@@ -55,5 +55,27 @@ else:
 
 #Statistics.multimode e statistics.mode são fórmulas de moda e moda multimodal. 
 
-# Prof indicou esse site: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
+# Prof indicou esse site: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/ para o cálculo da moda sem usar uma fórmula já definida. 
 
+# OBS: se você conseguir entender, por gentileza, me explique!!!! 
+
+#Segue o código que tem no link: 
+
+# Python program to print
+# mode of elements
+from collections import Counter
+  
+# list of elements to calculate mode
+n_num = [1, 2, 3, 4, 5, 2]
+n = len(n_num)
+  
+data = Counter(n_num)
+get_mode = dict(data)
+mode = [k for k, v in get_mode.items() if v == max(list(data.values()))]
+  
+if len(mode) == n:
+    get_mode = "No mode found"
+else:
+    get_mode = "Mode is / are: " + ', '.join(map(str, mode))
+      
+print(get_mode)
