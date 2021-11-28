@@ -22,7 +22,7 @@ print("A média geométrica é ", media_geo)
 media_goe2 = prod(lista_elementos)**(1/len(lista_elementos))
 print("A média geométrica de outro jeito é: ",media_goe2) 
 
-# Para calcular a mediana precisamos organizar a lista, e para facilitar eu criei um valor com a quantidade de elementos da lista para facilitar nod cálculos, pra não ficar um fórmula dentro de outra. 
+# Para calcular a mediana precisamos organizar a lista, e para facilitar eu criei um valor com a quantidade de elementos da lista para facilitar nos cálculos, pra não ficar um fórmula dentro de outra. 
 
 lista_ordenada = sorted(lista_elementos) #função para ordenar os elementos da lista de forma crescente
 print(lista_ordenada)
@@ -31,7 +31,7 @@ elementos = len(lista_elementos)
 print("Quantidade de elementos na lista: ", elementos)
 
 meio=int(elementos/2) #função para verificar qual a posição do meio na lista (é posição, não é o número)
-print("Posição do elemento central: ", meio+1) #como começa com índice zero, considerei o + 1 porque iniciamos a contagem em 1, 2, 3...
+print("Posição do elemento central: ", meio+1) #como começa com índice zero, considerei o + 1 porque iniciamos a contagem em 1, 2, 3... e o python inicia a contagem do index em 0, 1, 2...
 
 # Medida: SE a quantidade de elementos é par, a mediana é a soma do valor antecessor ao meio e o valor do meio, divido por 2. SE a quantidade de elementos é ímpar, a mediana é o valor central. 
 if (len(lista_ordenada)%2)==0: #verificar se o resto da divisão por 2 é zero, se for é par. 
@@ -43,7 +43,7 @@ else:
 # Volte ao Ex05 para ver maiores explicações sobre essa questão do posicionamento. 
 
 # Moda: valor que aparece mais vezes na lista
-#não consegui fazer sem usar fórumla!!!
+# não consegui fazer sem usar fórumla!!!
 # SE a quantidade de elementos da fórmula multimodal for apenas 1, significa que não é multimodal, é apenas 1 número com maior frequência. Caso contrário, significa que os valores são multimodais. 
 if (len(statistics.multimode(lista_ordenada))==1):
     moda = statistics.mode(lista_ordenada) #para o caso de ser somente uma moda

@@ -2,8 +2,11 @@
 
 # Tupla são representadas por () com os elementos separados por vírgula. Uma tupla não pode ser alterada - desvantagem com relação as listas. 
 
-tupla1 = (1,2,3)
-tupla2 = (4,5,6,7)
+tupla1 = ('a','b','c')
+tupla2 = ('d','e','f','g')
 
 tupla1e2 = tupla1 + tupla2
 print(tupla1e2)
+
+print(tupla1e2[3]) #Os elementos começam em 0, 1, 2, 3... por isso o quarto elemento é o índice 3. 
+

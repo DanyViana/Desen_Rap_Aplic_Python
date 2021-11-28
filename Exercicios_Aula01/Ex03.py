@@ -11,7 +11,7 @@ q = [2.4,2.5]
 
 # p e q são pontos de uma coordenada 
 
-print(math.dist(p,q)) #fórmula simples e fácil do python para calcular a distância
+print(math.dist(p,q)) #fórmula simples e fácil do python para calcular a distância entre os pontos p e q
 
 # A questão pede para incluir mais uma coordenada, foi incluso mais um valor em p e q
 p = [2.3,3.1,5.5]
