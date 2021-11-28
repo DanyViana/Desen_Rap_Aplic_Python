@@ -2,7 +2,7 @@
 
 # Teorema de Bayes: Descobrir quais são as chances de determinado ato acontecer decorrentem de outros atos.
 
-# A fórmula é: P(B|Ai)*P(Ai) / somatório de P(B|Ak)*P(Ak)
+# A fórmula é: P(B|Ai)*P(Ai) / somatório de P(B|Ak)*P(Ak) (veja a imagem)
 
 a = [0.03,0.05,0.08]  #probabilidade de encontrar o item lendário no baú
 b = [0.1,0.3,0.6] #probabilidade de encontrar cada baú
@@ -13,7 +13,7 @@ divisor = sum(res_list) #aqui ele só soma todo mundo (somatório)
 
 # O divisor nada mais é do que a probabilidade total de encontrar um item lendário em um dos baús, qualquer baú.
 
-# O Teorema de Bayes é para calcular a probabilidade de ecnontrar um item lendário num baú específico. De encontrar e ser especificamente no baú 1, é a probabilidade de encontrar o baú 1 (0,1) vezes ter um item lendário nele (0,03) dividido pela probabilidade total de encontrar um item lendário seja em qualquer baú.
+# O Teorema de Bayes é para calcular a probabilidade de encontrar um item lendário num baú específico. De encontrar e ser especificamente no baú 1, é a probabilidade de encontrar o baú 1 (0,1) vezes ter um item lendário nele (0,03) dividido pela probabilidade total de encontrar um item lendário seja em qualquer baú.
 
 prob_cada = [(a[i] * b[i])/divisor for i in range(len(b))]
 
